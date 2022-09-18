@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.page{
+    background-color: black;
+    margin: auto;
+    height: 1080px;
+    width: 1960px;
+}
+
+.header {
+    position:   absolute;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+
+.container {
+    position:   absolute;
+width: 960px;
+height: 1080px;
+left: 480px;
+top: 0px;
+
+background: rgba(119, 141, 142, 0.8);
+}
+
+.menu {
+    position: absolute;
+width: 960px;
+height: 150px;
+left: 0px;
+top: 0px;
+display: flex;
+align-items: center;
+margin-top: auto;
+margin-bottom: auto;
+background: #76E681;
+border-radius: 0px 0px 50px 50px;
+border-bottom: 0px;
+}   
+
+.logo {
+    width: 177px;
+    color: #FF511B;
+    margin-left: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43px;
+    text-decoration: none;
+}
+.words{
+    width: 590 px;
+    margin-left: auto;
+    margin-right: 45px;
+}
+.s{
+    margin-left: 12px;
+    color: black; 
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+.s:hover{
+    color: red;
+}
+.form  {
+    position: absolute;
+    width: 787px;
+    height: 570px;
+    left: 88px;
+    top: 264px;
+
+    background: #62A2A2;
+    border-radius: 15px;
+}
+.l1 {
+    position: absolute;
+    left: 94px;
+    top: 173px;
+    font-size: 28px;
+}
+.l2 {
+    position: absolute;
+    left: 421px;
+    top: 173px;
+    font-size: 28px;
+}
+.i1 {
+    position: absolute;
+    width: 242px;
+    height: 47px;
+    left: 94px;
+    top: 224px;
+    background: #D9D9D9;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    font-size: 24px;
+}
+.i2 {
+    position: absolute;
+    width: 242px;
+    height: 47px;
+    left: 421px;
+    top: 224px;
+    background: #D9D9D9;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    font-size: 24px;
+}
+.find {
+    position: absolute;
+    width: 589px;
+    height: 50px;
+    left: 94px;
+    top: 360px;
+    border: none;
+    border-radius: 10px;
+    font-size: 36px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.find:hover{
+    background: lightblue;
+}
+.line {
+    position: absolute;
+    width: 173px;
+    height: 0px;
+    left: 315px;
+    top: 89px;
+
+    border: 1px solid #FF0000;
+}

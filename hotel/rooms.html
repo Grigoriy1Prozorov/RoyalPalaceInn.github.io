@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Номера</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/rooms.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="page">
+    <header class="header" id="header">
+        <div class="container">
+            <div class="menu">               
+                 <a href="main.html" class="logo">Royal Palace Inn</a>
+                 <div class="words">
+                     <a href="booking.html" class="s" id="booking">Бронирование</a>
+                     <a href="rooms.html" class="s" id="room">Номера</a>
+                     <a href="services.html" class="s" id="serviсes">Услуги</a>
+                     <a href="contacts.html" class="s" id="contacts">Контакты</a>
+                     <a href="aboutus.html" class="s" id="aboutus">О нас</a>
+                     <div class="line"></div>
+                </div>
+            </div>
+            <form class="room" id="r1">
+                <img src="img/room1.png" alt="Одноместный номер" class="room_img">
+                <div class="headar">Одноместный номер</div>
+                <div id="c1">
+                    <label class="cont2">
+                        <input type="radio" name ="typeroom1"  value="1">
+                        <span>Стандарт</span>     
+                    </label>   
+                    <label class="cont2">
+                        <input type="radio" name ="typeroom1"  value="2">
+                        <span>Комфорт</span>
+                    </label>
+                    <label class="cont2">
+                        <input type="radio" name ="typeroom1" value="3">
+                        <span>Люкс</span> 
+                    </label>
+                </div>
+                <div id = "cc1"  class="skiped">
+                    <label for="i1" class="l1">Дата заезда</label>
+                    <input type="date" class="in" name="date1" id="i1" min="2022-09-20" max="2023-12-31">
+                    <label for="i2" class="l2">Дата выезда</label>
+                    <input type="date" class="in" name="date1" id="i2" min="2022-09-20" max="2023-12-31">
+                </div> 
+                <div id="price1" class="skiped"></div>              
+                <button type="button" class="choose" onclick="next(1)" id="b1">Далее</button>
+            </form>
+            <form class="room" id="r2">
+                <img src="img/room2.png" alt="Двуместный номер" class="room_img">
+                <div class="headar">Двуместный номер</div>
+                <div id="c2">
+                    <label class="cont2">
+                        <input type="radio" name ="typeroom2" value="1">
+                        <span>Стандарт</span>     
+                    </label>   
+                    <label class="cont2">
+                        <input type="radio" name ="typeroom2" value="2">
+                        <span>Комфорт</span>
+                    </label>
+                    <label class="cont2">
+                        <input type="radio" name ="typeroom2" value="3">
+                        <span>Люкс</span> 
+                    </label>
+                </div>
+                <div id = "cc2"  class="skiped">
+                    <label for="i1" class="l1">Дата заезда</label>
+                    <input type="date" class="in" name="date2" id="i1" min="2022-08-28" max="2023-12-31">
+                    <label for="i2" class="l2">Дата выезда</label>
+                    <input type="date" class="in" name="date2" id="i2" min="2022-08-28" max="2023-12-31">
+                </div> 
+                <div id="price2" class="skiped"></div>   
+                <button type="button" class="choose" onclick="next(2)" id="b2">Далее</button>
+            </form>
+            <form class="room" id="r3">
+                <img src="img/room3.png" alt="Трехместный номер" class="room_img">
+                <div class="headar">Трехместный номер</div>
+                <div  id="c3">
+                    <label class="cont2">
+                        <input type="radio" name ="typeroom3" value="1">
+                        <span>Стандарт</span>     
+                    </label>   
+                    <label class="cont2">
+                        <input type="radio" name ="typeroom3" value="2">
+                        <span>Комфорт</span>
+                    </label>
+                    <label class="cont2">
+                        <input type="radio" name ="typeroom3" value="3">
+                        <span>Люкс</span> 
+                    </label>
+                </div>
+                <div id = "cc3"  class="skiped">
+                    <label for="i1" class="l1">Дата заезда</label>
+                    <input type="date" class="in" name="date3" id="i1" min="2022-09-01" max="2023-12-31">
+                    <label for="i2" class="l2">Дата выезда</label>
+                    <input type="date" class="in" name="date3" id="i2" min="2022-09-01" max="2023-12-31">
+                </div> 
+                <div id="price3" class="skiped"></div>   
+                <button type="button" class="choose" onclick="next(3)" id="b3">Далее</button>
+            </form>
+        </div>
+        </header> 
+    </div>    
+    <script>
+
+        function next(i){
+            var inp = document.getElementsByName('typeroom'+i);
+            for (var j = 0; j < inp.length; j++) {
+                if(inp[j].type == "radio" && inp[j].checked) {
+                    document.getElementById("c"+i).classList.add('skiped'); 
+                    document.getElementById("b"+i).textContent = "Выбрать";  
+                    document.getElementById("cc"+i).classList.remove('skiped'); 
+                    break;        
+                }
+            }
+            var dat = document.getElementsByName('date'+i)
+            if(dat[0].value != "" && dat[1].value != "") {               
+                var date1 = new Date(dat[0].value);
+                var date2 = new Date(dat[1].value);
+                var dates = getDays(date1, date2);
+                let sum = 0;
+                for(var l = 0; l < dates.length; l++){
+                    if(dates[l].getDay() == 0 || dates[l].getDay() == 6){
+                        sum = sum + 25;
+                    }
+                }
+                
+                var types = document.getElementsByName('typeroom'+i);          
+                for (let m = 0; m < types.length; m++){
+                    if(types[m].checked){
+                        let cost = 0;
+                        switch (m+1){
+                        case 1:
+                            if(i == 1) cost = 100;
+                            else if(i == 2) cost = 150;
+                            else if(i == 3) cost = 200;
+                            break;
+                        case 2:
+                            if(i == 1) cost = 130;
+                            else if(i == 2) cost = 195;
+                            else if(i == 3) cost = 260;
+                            break;
+                        case 3:
+                            if(i == 1) cost = 150;
+                            else if(i == 2) cost = 225;
+                            else if(i == 3) cost = 300;
+                            break;   
+                        }
+                        //Суммирование
+                        for(let k = 0; k < dates.length; k++) {
+                            let discount = 0;
+                            if(k>7) discount += 5;
+                            if(k>14) discount += 10;    
+                            if(k>21) discount += 15;    
+                            sum = sum + cost*(100-discount)/100;
+                        }
+                    }
+                }
+                document.getElementById("cc"+i).classList.add('skiped');
+                document.getElementById("price"+i).classList.remove('skiped');
+                document.getElementById("price"+i).textContent = ('Цена - '+sum+'$');
+                document.getElementById("b"+i).classList.remove("choose");
+                document.getElementById("b"+i).classList.add("skiped");
+                console.log("sum = "+sum)              
+            }            
+        }
+        function getDays(start, end) {
+        for(var arr=[],dt=new Date(start); dt<=end; dt.setDate(dt.getDate()+1)){
+        arr.push(new Date(dt));
+        }
+        return arr;
+};
+    </script>
+</body>
+</html>

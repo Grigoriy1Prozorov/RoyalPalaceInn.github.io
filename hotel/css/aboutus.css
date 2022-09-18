@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.page{
+    background-color: #3E3E3E;
+    margin: auto;
+    height: 2048px;
+    width: 1960px;
+    background-image: url(background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header {
+    position:   absolute;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;  
+}
+
+.container {
+    position:   absolute;
+    margin: auto;
+    width: 960px;
+    height: 2048px;
+    left: 480px;
+    top: 0px;    
+    display: flex;
+    justify-content: center;
+background: rgba(119, 141, 142, 0.8);
+}
+
+.menu {
+    position: absolute;
+    width: 960px;
+    height: 150px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #76E681;
+    border-radius: 0px 0px 50px 50px;
+    border-bottom: 0px;
+}   
+
+.logo {
+    width: 177px;
+    color: #FF511B;
+    margin-left: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43px;
+    text-decoration: none;
+}
+.words{
+    width: 590 px;
+    margin-left: auto;
+    margin-right: 45px;
+}
+.s{
+    margin-left: 12px;
+    color: black; 
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+.s:hover{
+    color: red;
+}
+.line {
+    position: absolute;
+    width: 70px;
+    height: 0px;
+    left: 847px;
+    top: 89px;
+
+    border: 1px solid #FF0000;
+}
+.header1 {
+    position: absolute;
+    width: 749px;
+    height: 109px;
+    left: 106px;
+    top: 150px;    
+    font-size: 20px;
+    display: flex;
+    align-items: center;      
+    line-height: 24px;  
+}
+.img1 {
+    position: absolute;
+    width: 660px;
+    height: 360px;
+    left: 150px;
+    top: 259px;
+}
+.img2 {
+    position: absolute;
+    width: 591px;
+    height: 353px;
+    left: 184px;
+    top: 660px;
+}
+.img3 {
+    position: absolute;
+    width: 708px;
+    height: 456px;
+    left: 126px;
+    top: 1054px;
+}
+.img4 {
+    position: absolute;
+    width: 628px;
+    height: 441px;
+    left: 166px;
+    top: 1551px;
+}

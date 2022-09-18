@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.page{
+    background-color: black;
+    margin: auto;
+    height: 1080px;
+    width: 1960px;
+}
+
+.header {
+    position:   absolute;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.container {
+    position:   absolute;
+width: 960px;
+height: 1080px;
+left: 480px;
+top: 0px;
+    color: white;
+background: rgba(119, 141, 142, 0.8);
+}
+
+.menu {
+    position: absolute;
+width: 960px;
+height: 150px;
+left: 0px;
+top: 0px;
+display: flex;
+align-items: center;
+margin-top: auto;
+margin-bottom: auto;
+background: #76E681;
+border-radius: 0px 0px 50px 50px;
+border-bottom: 0px;
+color: black;
+}   
+
+.logo {
+    width: 177px;
+    color: #FF511B;
+    margin-left: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43px;
+    text-decoration: none;
+}
+.words{
+    width: 590 px;
+    margin-left: auto;
+    margin-right: 45px;
+}
+.s{
+    margin-left: 12px;
+    color: black; 
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+.s:hover{
+    color: red;
+}
+.line {
+    position: absolute;
+    width: 81px;
+    height: 0px;
+    left: 618px;
+    top: 89px;
+
+    border: 1px solid #FF0000;
+}
+.food {
+    position: absolute;
+    width: 281px;
+    height: 188px;
+    left: 80px;
+    top: 201px;
+}
+.washers {
+    position: absolute;
+    width: 281px;
+    height: 188px;
+    left: 80px;
+    top: 434px;
+}
+.bed {
+    position: absolute;
+    width: 281px;
+    height: 188px;
+    left: 80px;
+    top: 660px;
+}
+.header1 {
+    position: absolute;
+    width: 463px;
+    height: 39px;
+    left: 417px;
+    top: 201px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+}
+.text1 {
+    position: absolute;
+    width: 387px;
+    height: 58px;
+    left: 417px;
+    top: 272px;
+
+}
+.header2 {
+    position: absolute;
+    width: 179px;
+    height: 39px;
+    left: 417px;
+    top: 434px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+}
+.text2 {
+    position: absolute;
+    width: 387px;
+    height: 87px;
+    left: 417px;
+    top: 496px;
+
+}
+.header3 {
+    position: absolute;
+    width: 298px;
+    height: 39px;
+    left: 417px;
+    top: 660px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+}
+.text3 {
+    position: absolute;
+    width: 387px;
+    height: 87px;
+    left: 417px;
+    top: 722px;
+
+}
+.last {
+    position: absolute;
+    width: 796px;
+    height: 84px;
+    left: 79px;
+    top: 899px;  
+    font-size: 28px;  
+}
+.line {
+    position: absolute;
+    width: 81px;
+    height: 0px;
+    left: 618px;
+    top: 89px;
+
+    border: 1px solid #FF0000;
+}
